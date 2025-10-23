@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surendra Sade - DevOps Portfolio</title>
+    <!-- Devicons for tool logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FF9933 0%, #000000 100%);
+            color: #fff;
+            text-align: center;
+        }
+        header {
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-bottom: 5px solid #FF9933;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #FF9933;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #fff;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .experience {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #FF9933;
+        }
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .tool {
+            background: #FF9933;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .tool i {
+            font-size: 1.5em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-top: 5px solid #FF9933;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Surendra Sade</h1>
+        <p class="subtitle">DevOps Engineer | 3 Years of Experience</p>
+    </header>
+    
+    <section>
+        <h2>About Me</h2>
+        <p>Passionate DevOps professional with 3 years of hands-on experience in automating, deploying, and scaling applications. Currently working at HCL Technologies, I specialize in CI/CD pipelines, cloud infrastructure, and containerization to drive efficient software delivery.</p>
+        
+        <div class="experience">
+            <h3>Experience Highlights</h3>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Designed and implemented CI/CD pipelines using Jenkins and GitLab CI at HCL.</li>
+                <li>Managed cloud infrastructure on AWS, Azure, and GCP for enterprise clients.</li>
+                <li>Containerized applications with Docker and orchestrated with Kubernetes in production environments.</li>
+                <li>Automated monitoring and logging with tools like Prometheus and ELK Stack, ensuring high availability.</li>
+            </ul>
+        </div>
+        
+        <h3>DevOps Tools Expertise</h3>
+        <div class="tools">
+            <div class="tool"><i class="devicon-docker-plain"></i> Docker</div>
+            <div class="tool"><i class="devicon-kubernetes-plain"></i> Kubernetes</div>
+            <div class="tool"><i class="devicon-jenkins-plain"></i> Jenkins</div>
+            <div class="tool"><i class="devicon-gitlab-plain"></i> GitLab CI</div>
+            <div class="tool"><i class="devicon-amazonwebservices-plain"></i> AWS</div>
+            <div class="tool"><i class="devicon-azure-plain"></i> Azure</div>
+            <div class="tool"><i class="devicon-terraform-plain"></i> Terraform</div>
+            <div class="tool"><i class="devicon-ansible-plain"></i> Ansible</div>
+            <div class="tool"><i class="devicon-prometheus-plain"></i> Prometheus</div>
+            <div class="tool"><i class="devicon-grafana-plain"></i> Grafana</div>
+            <div class="tool"><i class="devicon-elasticsearch-plain"></i> ELK Stack</div>
+            <div class="tool"><i class="devicon-git-plain"></i> Git</div>
+            <div class="tool"><i class="devicon-linux-plain"></i> Linux</div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Contact: sadesurendradevops@gmail.com | Phone: 6281466869 | LinkedIn: /in/surendrasade</p>
+    </footer>
+    
+    <script>
+        // Simple animation for tools on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const tools = document.querySelectorAll('.tool');
+            tools.forEach((tool, index) => {
+                tool.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>
