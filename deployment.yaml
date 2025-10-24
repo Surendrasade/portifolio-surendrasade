@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: surendra-portfolio-deployment
+  labels:
+    app: surendra-portfolio
+spec:
+  replicas: 1  # Number of pod replicas
+  selector:
+    matchLabels:
+      app: surendra-portfolio
+  template:
+    metadata:
+      labels:
+        app: surendra-portfolio
+    spec:
+      containers:
+      - name: nginx
+        image: surendrasade953/surendra-portfolio  # Replace with your actual image
+        ports:
+        - containerPort: 80
