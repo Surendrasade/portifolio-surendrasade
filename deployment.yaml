@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: surendrasade953/surendra-portfolio  # Replace with your actual image
+        image: surendrasade953/surendra-portfolio:v2  # Replace with your actual image
         ports:
         - containerPort: 80
